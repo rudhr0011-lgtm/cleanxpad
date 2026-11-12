@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean-X Pad — Smart Sanitary Waste Management | </title>
+    <meta name="description"
+        content="Clean-X Pad is an innovative smart sanitary waste management solution designed for environmental sustainability. Rashtriya Bal Vaigyanik Pradarshani finalist project revolutionizing menstrual waste management.">
+    <meta name="keywords"
+        content="Clean-X Pad, sanitary waste management, Rashtriya Bal Vaigyanik Pradarshani, environmental sustainability, menstrual hygiene, smart waste disposal">
+    <meta name="author" content="Team Clean-X">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Mouse Cursor -->
+    <div id="custom-cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress-bar"></div>
+
+    <!-- Cinematic Backgrounds -->
+    <div class="cinematic-bg cinematic-polluted" id="bg-polluted">
+        <div class="smoke smoke-1"></div>
+        <div class="smoke smoke-2"></div>
+        <div class="particles-polluted"></div>
+    </div>
+
+    <div class="cinematic-bg cinematic-clean" id="bg-clean">
+        <div class="light-rays"></div>
+        <div class="floating-leaves"></div>
+        <div class="birds-container"></div>
+    </div>
+
+    <!-- 3D Animated Background Container -->
+    <div id="global-3d-bg">
+        <!-- Heating Chamber Core -->
+        <div class="chamber-core">
+            <div class="chamber-pulse"></div>
+            <div class="chamber-inner"></div>
+            <svg class="chamber-rays" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" stroke="url(#heatGrad)" stroke-width="2" fill="none"
+                    stroke-dasharray="4 8" />
+                <defs>
+                    <radialGradient id="heatGrad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ff6b6b" />
+                        <stop offset="100%" stop-color="#ee5a24" stop-opacity="0" />
+                    </radialGradient>
+                </defs>
+            </svg>
+        </div>
+
+        <!-- Animated Gears -->
+        <div class="gear gear-1">
+            <svg viewBox="0 0 100 100" fill="none">
+                <path
+                    d="M50 10 L55 20 A30 30 0 0 1 65 25 L75 20 L80 30 L70 35 A30 30 0 0 1 75 45 L85 50 L85 60 L75 65 A30 30 0 0 1 70 75 L80 80 L70 90 L60 85 A30 30 0 0 1 50 90 L45 100 L35 100 L40 90 A30 30 0 0 1 30 85 L20 90 L10 80 L20 75 A30 30 0 0 1 15 65 L5 60 L5 50 L15 45 A30 30 0 0 1 20 35 L10 30 L20 20 L30 25 A30 30 0 0 1 40 20 L45 10 Z"
+                    stroke="rgba(2, 136, 209, 0.2)" stroke-width="2" fill="rgba(2, 136, 209, 0.05)" />
+                <circle cx="50" cy="50" r="15" stroke="rgba(2, 136, 209, 0.2)" stroke-width="2" fill="none" />
+                <circle cx="50" cy="50" r="5" fill="rgba(2, 136, 209, 0.3)" />
+            </svg>
+        </div>
+
+        <div class="gear gear-2">
+            <svg viewBox="0 0 100 100" fill="none">
+                <path
+                    d="M50 10 L55 20 A30 30 0 0 1 65 25 L75 20 L80 30 L70 35 A30 30 0 0 1 75 45 L85 50 L85 60 L75 65 A30 30 0 0 1 70 75 L80 80 L70 90 L60 85 A30 30 0 0 1 50 90 L45 100 L35 100 L40 90 A30 30 0 0 1 30 85 L20 90 L10 80 L20 75 A30 30 0 0 1 15 65 L5 60 L5 50 L15 45 A30 30 0 0 1 20 35 L10 30 L20 20 L30 25 A30 30 0 0 1 40 20 L45 10 Z"
+                    stroke="rgba(0, 200, 83, 0.2)" stroke-width="2" fill="rgba(0, 200, 83, 0.05)" />
+                <circle cx="50" cy="50" r="15" stroke="rgba(0, 200, 83, 0.2)" stroke-width="2" fill="none" />
+                <circle cx="50" cy="50" r="5" fill="rgba(0, 200, 83, 0.3)" />
+            </svg>
+        </div>
+
+        <div class="gear gear-3">
+            <svg viewBox="0 0 100 100" fill="none">
+                <path
+                    d="M50 10 L55 20 A30 30 0 0 1 65 25 L75 20 L80 30 L70 35 A30 30 0 0 1 75 45 L85 50 L85 60 L75 65 A30 30 0 0 1 70 75 L80 80 L70 90 L60 85 A30 30 0 0 1 50 90 L45 100 L35 100 L40 90 A30 30 0 0 1 30 85 L20 90 L10 80 L20 75 A30 30 0 0 1 15 65 L5 60 L5 50 L15 45 A30 30 0 0 1 20 35 L10 30 L20 20 L30 25 A30 30 0 0 1 40 20 L45 10 Z"
+                    stroke="rgba(155, 89, 182, 0.15)" stroke-width="2" fill="rgba(155, 89, 182, 0.05)" />
+                <circle cx="50" cy="50" r="15" stroke="rgba(155, 89, 182, 0.15)" stroke-width="2" fill="none" />
+                <circle cx="50" cy="50" r="5" fill="rgba(155, 89, 182, 0.2)" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-icon">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <circle cx="30" cy="30" r="28" stroke="url(#loaderGrad)" stroke-width="3" stroke-linecap="round"
+                        stroke-dasharray="120 60" class="loader-circle" />
+                    <defs>
+                        <linearGradient id="loaderGrad" x1="0" y1="0" x2="60" y2="60">
+                            <stop offset="0%" stop-color="#00C853" />
+                            <stop offset="100%" stop-color="#0288D1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <p class="loader-text">Clean-X Pad</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="14" stroke="url(#logoGrad)" stroke-width="2.5" />
+                        <path d="M10 16 L14 20 L22 12" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+                                <stop offset="0%" stop-color="#00C853" />
+                                <stop offset="100%" stop-color="#0288D1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </span>
+                <span class="logo-text">Clean-X <span class="logo-highlight">Pad</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#how-it-works">Process</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#sdg">SDGs</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles" id="heroParticles"></div>
+            <div class="hero-grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                54th Rashtriya Bal Vaigyanik Pradarshani
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                Revolutionizing<br>
+                <span class="gradient-text">Menstrual Waste</span><br>
+                Management for a<br>
+                <span class="gradient-text">Sustainable Future</span>
+            </h1>
+            <p class="hero-subtitle animate-on-scroll">
+                Clean-X Pad is a smart, automated sanitary waste management device that sterilizes, shreds, and safely
+                processes menstrual waste — turning a public health hazard into an environmental solution.
+            </p>
+            <div class="hero-actions animate-on-scroll">
+                <a href="#solution" class="btn btn-primary">
+                    <span>Explore Solution</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10h12m-4-4 4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="#how-it-works" class="btn btn-secondary">
+                    <span>See How It Works</span>
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="12.3">0</span><span class="hero-stat-suffix">B</span>
+                    <span class="hero-stat-label">Pads disposed annually in India</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="800">0</span><span class="hero-stat-suffix"> yrs</span>
+                    <span class="hero-stat-label">Time for a single pad to decompose</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="90">0</span><span class="hero-stat-suffix">%</span>
+                    <span class="hero-stat-label">Plastic content in conventional pads</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section id="problem" class="section section-problem">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">The Crisis</span>
+                <h2 class="section-title">A Growing <span class="gradient-text">Environmental Emergency</span></h2>
+                <p class="section-subtitle">India generates over 113,000 tonnes of menstrual waste annually. Most of it
+                    ends up in landfills, water bodies, or is burned in the open — polluting our environment and
+                    endangering public health.</p>
+            </div>
+
+
+            <div class="problem-grid">
+                <div class="problem-card problem-card-large animate-on-scroll">
+                    <div class="problem-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4 L24 44 M4 24 L44 24 M10 10 L38 38 M38 10 L10 38" stroke="url(#probGrad1)"
+                                stroke-width="2" stroke-linecap="round" opacity="0.3" />
+                            <circle cx="24" cy="24" r="16" stroke="url(#probGrad1)" stroke-width="2.5" fill="none" />
+                            <path d="M17 24 C17 20 20 17 24 17 C28 17 31 20 31 24 C31 28 28 31 24 31"
+                                stroke="url(#probGrad1)" stroke-width="2.5" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="probGrad1" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#ff6b6b" />
+                                    <stop offset="100%" stop-color="#ee5a24" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Landfill Overload</h3>
+                    <p>Sanitary pads are non-biodegradable, taking 500–800 years to decompose. They leach microplastics
+                        and toxic chemicals into soil and groundwater, creating a ticking environmental time bomb.</p>
+                    <div class="problem-stat">
+                        <span class="problem-stat-number counter" data-target="113000">0</span>
+                        <span class="problem-stat-label">Tonnes of menstrual waste per year in India</span>
+                    </div>
+                </div>
+
+                <div class="problem-card animate-on-scroll" style="--delay: 0.1s">
+                    <div class="problem-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M8 36 Q16 20 24 28 Q32 36 40 20" stroke="url(#probGrad2)" stroke-width="2.5"
+                                fill="none" stroke-linecap="round" />
+                            <circle cx="24" cy="12" r="4" stroke="url(#probGrad2)" stroke-width="2" fill="none" />
+                            <path d="M12 40 L36 40" stroke="url(#probGrad2)" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="probGrad2" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#0288D1" />
+                                    <stop offset="100%" stop-color="#00C853" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Water Contamination</h3>
+                    <p>Improper disposal into water bodies releases dioxins, furans, and microplastics — poisoning
+                        aquatic ecosystems and contaminating drinking water sources.</p>
+                </div>
+
+                <div class="problem-card animate-on-scroll" style="--delay: 0.2s">
+                    <div class="problem-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 8 L24 28 M20 24 L24 28 L28 24" stroke="url(#probGrad3)" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 36 C12 30 18 26 24 26 C30 26 36 30 36 36" stroke="url(#probGrad3)"
+                                stroke-width="2.5" fill="none" stroke-linecap="round" />
+                            <circle cx="24" cy="40" r="2" fill="url(#probGrad3)" />
+                            <defs>
+                                <linearGradient id="probGrad3" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#f39c12" />
+                                    <stop offset="100%" stop-color="#e74c3c" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Open Burning Hazards</h3>
+                    <p>Burning pads releases toxic dioxins and furans — known carcinogens that cause respiratory
+                        diseases, hormonal disruption, and severe air pollution in communities.</p>
+                </div>
+
+                <div class="problem-card animate-on-scroll" style="--delay: 0.3s">
+                    <div class="problem-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M16 12 L16 36 L32 36 L32 12 Z" stroke="url(#probGrad4)" stroke-width="2.5"
+                                fill="none" stroke-linejoin="round" />
+                            <path d="M20 20 L28 20 M20 26 L28 26 M20 32 L24 32" stroke="url(#probGrad4)"
+                                stroke-width="2" stroke-linecap="round" />
+                            <path d="M20 8 L28 8 L28 12 L20 12 Z" stroke="url(#probGrad4)" stroke-width="2" fill="none"
+                                stroke-linejoin="round" />
+                            <defs>
+                                <linearGradient id="probGrad4" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#9b59b6" />
+                                    <stop offset="100%" stop-color="#3498db" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Health Risks for Workers</h3>
+                    <p>Waste workers who handle unsegregated menstrual waste face exposure to bloodborne pathogens,
+                        infections, and biohazard materials without proper protection.</p>
+                </div>
+            </div>
+
+            <div class="problem-infographic animate-on-scroll">
+                <div class="infographic-item">
+                    <div class="infographic-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" stroke="#e8f5e9" stroke-width="6" fill="none" />
+                            <circle cx="50" cy="50" r="45" stroke="url(#infoGrad1)" stroke-width="6" fill="none"
+                                stroke-dasharray="283" stroke-dashoffset="57" stroke-linecap="round"
+                                class="infographic-progress" data-progress="80" />
+                            <defs>
+                                <linearGradient id="infoGrad1" x1="0" y1="0" x2="100" y2="100">
+                                    <stop offset="0%" stop-color="#ff6b6b" />
+                                    <stop offset="100%" stop-color="#ee5a24" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="infographic-value"><span class="counter" data-target="80">0</span>%</span>
+                    </div>
+                    <p>Pads end up in landfills</p>
+                </div>
+                <div class="infographic-item">
+                    <div class="infographic-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" stroke="#e8f5e9" stroke-width="6" fill="none" />
+                            <circle cx="50" cy="50" r="45" stroke="url(#infoGrad2)" stroke-width="6" fill="none"
+                                stroke-dasharray="283" stroke-dashoffset="141" stroke-linecap="round"
+                                class="infographic-progress" data-progress="50" />
+                            <defs>
+                                <linearGradient id="infoGrad2" x1="0" y1="0" x2="100" y2="100">
+                                    <stop offset="0%" stop-color="#0288D1" />
+                                    <stop offset="100%" stop-color="#00C853" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="infographic-value"><span class="counter" data-target="50">0</span>%</span>
+                    </div>
+                    <p>Women lack safe disposal options</p>
+                </div>
+                <div class="infographic-item">
+                    <div class="infographic-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" stroke="#e8f5e9" stroke-width="6" fill="none" />
+                            <circle cx="50" cy="50" r="45" stroke="url(#infoGrad3)" stroke-width="6" fill="none"
+                                stroke-dasharray="283" stroke-dashoffset="85" stroke-linecap="round"
+                                class="infographic-progress" data-progress="70" />
+                            <defs>
+                                <linearGradient id="infoGrad3" x1="0" y1="0" x2="100" y2="100">
+                                    <stop offset="0%" stop-color="#f39c12" />
+                                    <stop offset="100%" stop-color="#e74c3c" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="infographic-value"><span class="counter" data-target="70">0</span>%</span>
+                    </div>
+                    <p>Diseases from improper handling</p>
+                </div>
+                <div class="infographic-item">
+                    <div class="infographic-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" stroke="#e8f5e9" stroke-width="6" fill="none" />
+                            <circle cx="50" cy="50" r="45" stroke="url(#infoGrad4)" stroke-width="6" fill="none"
+                                stroke-dasharray="283" stroke-dashoffset="28" stroke-linecap="round"
+                                class="infographic-progress" data-progress="90" />
+                            <defs>
+                                <linearGradient id="infoGrad4" x1="0" y1="0" x2="100" y2="100">
+                                    <stop offset="0%" stop-color="#9b59b6" />
+                                    <stop offset="100%" stop-color="#3498db" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="infographic-value"><span class="counter" data-target="90">0</span>%</span>
+                    </div>
+                    <p>Plastic in each pad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution -->
+    <section id="solution" class="section section-solution">
+        <div class="container">
+            <div class="solution-layout">
+                <div class="solution-text animate-on-scroll">
+                    <span class="section-tag">The Solution</span>
+                    <h2 class="section-title">Introducing <span class="gradient-text">Clean-X Pad</span></h2>
+                    <p class="solution-description">
+                        Clean-X Pad is a fully automated, compact, and eco-friendly device designed to safely dispose of
+                        sanitary pads at the point of use. It eliminates the need for manual handling, open burning, or
+                        landfill disposal — providing a dignified, hygienic, and sustainable solution.
+                    </p>
+                    <div class="solution-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 12l2 2 4-4" stroke="#00C853" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <circle cx="12" cy="12" r="10" stroke="#00C853" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Zero Emissions</h4>
+                                <p>Activated carbon filtration ensures no harmful gases are released into the
+                                    atmosphere.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+                                        stroke="#0288D1" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>UV Sterilization</h4>
+                                <p>Medical-grade UV-C light eliminates 99.9% of pathogens before processing.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#f39c12" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Fully Automated</h4>
+                                <p>Smart sensors and microcontroller-driven processing — zero manual intervention
+                                    required.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#9b59b6"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Safe & Dignified</h4>
+                                <p>Enclosed system ensures complete privacy and eliminates social stigma around
+                                    disposal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-visual animate-on-scroll">
+                    <div class="solution-device">
+                        <div class="device-glow"></div>
+                        <div class="device-body">
+                            <div class="device-screen">
+                                <div class="device-status">
+                                    <div class="status-dot active"></div>
+                                    <span>System Ready</span>
+                                </div>
+                                <div class="device-display">
+                                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                        <circle cx="40" cy="40" r="35" stroke="url(#devGrad)" stroke-width="2"
+                                            fill="none" opacity="0.3" />
+                                        <circle cx="40" cy="40" r="25" stroke="url(#devGrad)" stroke-width="2"
+                                            fill="none" opacity="0.5" />
+                                        <circle cx="40" cy="40" r="15" stroke="url(#devGrad)" stroke-width="3"
+                                            fill="none" />
+                                        <path d="M34 40 L38 44 L46 36" stroke="#00C853" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <defs>
+                                            <linearGradient id="devGrad" x1="0" y1="0" x2="80" y2="80">
+                                                <stop offset="0%" stop-color="#00C853" />
+                                                <stop offset="100%" stop-color="#0288D1" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="device-metrics">
+                                    <div class="metric">
+                                        <span class="metric-label">Temp</span>
+                                        <span class="metric-value">42°C</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-label">UV</span>
+                                        <span class="metric-value">Active</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-label">Filter</span>
+                                        <span class="metric-value">98%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="device-slot">
+                            <div class="slot-indicator"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section section-process">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">The Process</span>
+                <h2 class="section-title">How <span class="gradient-text">Clean-X Pad</span> Works</h2>
+                <p class="section-subtitle">A six-stage automated process that transforms hazardous menstrual waste into
+                    safe, manageable material — all within minutes.</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-line"></div>
+
+                <div class="process-step animate-on-scroll" style="--delay: 0s">
+                    <div class="step-number">01</div>
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect x="8" y="4" width="24" height="32" rx="4" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                                <path d="M14 16 L26 16 M14 22 L22 22" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path d="M16 4 V0 M24 4 V0" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path d="M20 28 L16 32 L20 36" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Smart Intake</h3>
+                        <p>An automated intake slot accepts the used sanitary pad. IR sensors detect insertion and
+                            initiate the processing cycle automatically.</p>
+                    </div>
+                </div>
+
+                <div class="process-step animate-on-scroll" style="--delay: 0.1s">
+                    <div class="step-number">02</div>
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2" fill="none" />
+                                <path d="M20 8 L20 14 M20 26 L20 32 M8 20 L14 20 M26 20 L32 20" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <circle cx="20" cy="20" r="4" stroke="currentColor" stroke-width="2" fill="none" />
+                            </svg>
+                        </div>
+                        <h3>UV Sterilization</h3>
+                        <p>High-intensity UV-C light (254nm wavelength) irradiates the pad for 60 seconds, destroying
+                            99.9% of bacteria, viruses, and bloodborne pathogens.</p>
+                    </div>
+                </div>
+
+                <div class="process-step animate-on-scroll" style="--delay: 0.2s">
+                    <div class="step-number">03</div>
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M12 32 C12 18 20 8 20 8 C20 8 28 18 28 32" stroke="currentColor"
+                                    stroke-width="2" fill="none" stroke-linecap="round" />
+                                <path d="M16 28 C16 22 20 16 20 16 C20 16 24 22 24 28" stroke="currentColor"
+                                    stroke-width="2" fill="none" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3>Controlled Heating</h3>
+                        <p>Precision-controlled heating elements raise the temperature to 150–200°C, drying and reducing
+                            the pad volume by up to 80% while containing all emissions.</p>
+                    </div>
+                </div>
+
+                <div class="process-step animate-on-scroll" style="--delay: 0.3s">
+                    <div class="step-number">04</div>
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M8 14 L32 14 M8 20 L32 20 M8 26 L32 26" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path d="M14 8 L14 32 M20 8 L20 32 M26 8 L26 32" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" opacity="0.5" />
+                            </svg>
+                        </div>
+                        <h3>Shredding</h3>
+                        <p>Industrial-grade micro-shredding blades break down the dried pad into fine, unrecognizable
+                            fragments — ensuring complete destruction and volume reduction.</p>
+                    </div>
+                </div>
+
+                <div class="process-step animate-on-scroll" style="--delay: 0.4s">
+                    <div class="step-number">05</div>
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect x="10" y="6" width="20" height="28" rx="4" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                                <circle cx="16" cy="14" r="2" fill="currentColor" opacity="0.5" />
+                                <circle cx="24" cy="14" r="2" fill="currentColor" opacity="0.5" />
+                                <circle cx="20" cy="20" r="2" fill="currentColor" opacity="0.5" />
+                                <circle cx="16" cy="26" r="2" fill="currentColor" opacity="0.5" />
+                                <circle cx="24" cy="26" r="2" fill="currentColor" opacity="0.5" />
+                            </svg>
+                        </div>
+                        <h3>Activated Carbon Filtration</h3>
+                        <p>Multi-layer activated carbon filters capture all odors, volatile organic compounds, and
+                            micro-pollutants — ensuring zero emissions and zero odor.</p>
+                    </div>
+                </div>
+
+                <div class="process-step animate-on-scroll" style="--delay: 0.5s">
+                    <div class="step-number">06</div>
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M10 28 L10 32 L30 32 L30 28" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14 28 L14 20 L26 20 L26 28" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                                <path d="M16 16 L20 12 L24 16" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M20 12 L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3>Safe Waste Collection</h3>
+                        <p>Processed material is collected in a sealed, replaceable container. The sterile residue is
+                            safe for standard waste disposal — reducing biohazard risk to zero.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section section-features">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Key Features</span>
+                <h2 class="section-title">Engineered for <span class="gradient-text">Excellence</span></h2>
+                <p class="section-subtitle">Every component of Clean-X Pad is designed with precision, sustainability,
+                    and user dignity in mind.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll" style="--delay: 0s">
+                    <div class="feature-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M16 4v6M16 22v6M4 16h6M22 16h6M7.5 7.5l4.2 4.2M20.3 20.3l4.2 4.2M7.5 24.5l4.2-4.2M20.3 11.7l4.2-4.2"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>Smart Sensors</h3>
+                    <p>IR and temperature sensors enable fully automatic operation with real-time monitoring.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" style="--delay: 0.05s">
+                    <div class="feature-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="6" y="10" width="20" height="16" rx="3" stroke="currentColor" stroke-width="2"
+                                fill="none" />
+                            <path d="M10 10V8a6 6 0 1 1 12 0v2" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                            <circle cx="16" cy="19" r="2" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h3>Tamper-Proof</h3>
+                    <p>Sealed, locked compartments prevent unauthorized access and ensure safety compliance.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" style="--delay: 0.1s">
+                    <div class="feature-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M6 26V14l10-8 10 8v12a2 2 0 01-2 2H8a2 2 0 01-2-2z" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linejoin="round" />
+                            <path d="M12 28v-8h8v8" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Compact Design</h3>
+                    <p>Space-efficient form factor fits seamlessly into restrooms of all sizes, from homes to offices.
+                    </p>
+                </div>
+                <div class="feature-card animate-on-scroll" style="--delay: 0.15s">
+                    <div class="feature-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4a12 12 0 110 24 12 12 0 010-24z" stroke="currentColor" stroke-width="2"
+                                fill="none" />
+                            <path d="M4 16h24" stroke="currentColor" stroke-width="2" />
+                            <path d="M16 4c3.3 3 5.3 7.7 5.3 12S19.3 25 16 28c-3.3-3-5.3-7.7-5.3-12S12.7 7 16 4z"
+                                stroke="currentColor" stroke-width="2" fill="none" />
+                        </svg>
+                    </div>
+                    <h3>IoT-Ready</h3>
+                    <p>Wi-Fi and Bluetooth connectivity enable remote monitoring, usage analytics, and maintenance
+                        alerts.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" style="--delay: 0.2s">
+                    <div class="feature-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M13 4L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Low Power</h3>
+                    <p>Energy-efficient design consumes minimal electricity, making it ideal for solar-powered
+                        deployments.</p>
+                </div>
+                <div class="feature-card animate-on-scroll" style="--delay: 0.25s">
+                    <div class="feature-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 28s10-5.5 10-13.5A10 10 0 006 14.5C6 22.5 16 28 16 28z" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 16l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Zero emissions, zero liquid discharge, and minimal carbon footprint throughout operation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Environmental Impact -->
+    <section id="impact" class="section section-impact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Environmental Impact</span>
+                <h2 class="section-title">Making a <span class="gradient-text">Measurable Difference</span></h2>
+                <p class="section-subtitle">Every Clean-X Pad unit deployed contributes directly to reducing pollution,
+                    protecting ecosystems, and building a cleaner planet.</p>
+            </div>
+
+            <div class="impact-metrics">
+                <div class="impact-card animate-on-scroll" style="--delay: 0s">
+                    <div class="impact-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 6 C24 6 10 16 10 28 C10 36 16 42 24 42 C32 42 38 36 38 28 C38 16 24 6 24 6Z"
+                                stroke="#00C853" stroke-width="2.5" fill="none" />
+                            <path d="M20 30 L24 26 L28 30" stroke="#00C853" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="impact-number"><span class="counter" data-target="100">0</span>%</div>
+                    <h3>Emission-Free Processing</h3>
+                    <p>Activated carbon filtration captures all pollutants, ensuring absolutely zero harmful emissions.
+                    </p>
+                </div>
+                <div class="impact-card animate-on-scroll" style="--delay: 0.1s">
+                    <div class="impact-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="18" stroke="#0288D1" stroke-width="2.5" fill="none" />
+                            <path d="M16 24h16M24 16v16" stroke="#0288D1" stroke-width="2.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="impact-number"><span class="counter" data-target="80">0</span>%</div>
+                    <h3>Volume Reduction</h3>
+                    <p>Heating and shredding reduces waste volume by up to 80%, drastically cutting landfill burden.</p>
+                </div>
+                <div class="impact-card animate-on-scroll" style="--delay: 0.2s">
+                    <div class="impact-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M8 38 L18 24 L26 30 L40 10" stroke="#f39c12" stroke-width="2.5" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M32 10 L40 10 L40 18" stroke="#f39c12" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="impact-number"><span class="counter" data-target="99">0</span>.9%</div>
+                    <h3>Pathogen Elimination</h3>
+                    <p>UV sterilization destroys virtually all disease-causing organisms, protecting workers and
+                        communities.</p>
+                </div>
+                <div class="impact-card animate-on-scroll" style="--delay: 0.3s">
+                    <div class="impact-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 6v8M24 34v8M6 24h8M34 24h8" stroke="#9b59b6" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <circle cx="24" cy="24" r="8" stroke="#9b59b6" stroke-width="2.5" fill="none" />
+                        </svg>
+                    </div>
+                    <div class="impact-number">Zero</div>
+                    <h3>Liquid Discharge</h3>
+                    <p>Complete dry processing eliminates any liquid waste, preventing groundwater contamination.</p>
+                </div>
+            </div>
+
+            <!-- Health & Hygiene -->
+            <div class="health-section animate-on-scroll">
+                <div class="health-content">
+                    <h3>Health & Hygiene <span class="gradient-text">Impact</span></h3>
+                    <p>Clean-X Pad doesn't just solve waste — it transforms menstrual hygiene by eliminating the risks
+                        associated with improper disposal.</p>
+                    <div class="health-grid">
+                        <div class="health-item">
+                            <span class="health-check">✓</span>
+                            <span>Eliminates biohazard exposure for waste workers</span>
+                        </div>
+                        <div class="health-item">
+                            <span class="health-check">✓</span>
+                            <span>Reduces infection transmission pathways</span>
+                        </div>
+                        <div class="health-item">
+                            <span class="health-check">✓</span>
+                            <span>Prevents dioxin and furan release from open burning</span>
+                        </div>
+                        <div class="health-item">
+                            <span class="health-check">✓</span>
+                            <span>Ensures dignified, stigma-free disposal experience</span>
+                        </div>
+                        <div class="health-item">
+                            <span class="health-check">✓</span>
+                            <span>Protects community water sources from contamination</span>
+                        </div>
+                        <div class="health-item">
+                            <span class="health-check">✓</span>
+                            <span>Promotes menstrual hygiene awareness and access</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison -->
+            <div class="comparison-section animate-on-scroll">
+                <h3 class="comparison-title">Clean-X Pad vs. <span class="gradient-text">Traditional Incinerators</span>
+                </h3>
+                <div class="comparison-table-wrap">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Parameter</th>
+                                <th class="th-old">Traditional Incinerator</th>
+                                <th class="th-new">Clean-X Pad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Emissions</td>
+                                <td class="td-old">Releases dioxins & furans</td>
+                                <td class="td-new">Zero emissions (carbon filtration)</td>
+                            </tr>
+                            <tr>
+                                <td>Odor</td>
+                                <td class="td-old">Strong, unpleasant odor</td>
+                                <td class="td-new">Completely odorless operation</td>
+                            </tr>
+                            <tr>
+                                <td>Automation</td>
+                                <td class="td-old">Manual operation required</td>
+                                <td class="td-new">Fully automated, sensor-driven</td>
+                            </tr>
+                            <tr>
+                                <td>Sterilization</td>
+                                <td class="td-old">None — pathogens survive</td>
+                                <td class="td-new">UV-C kills 99.9% of pathogens</td>
+                            </tr>
+                            <tr>
+                                <td>Energy Use</td>
+                                <td class="td-old">High power consumption</td>
+                                <td class="td-new">Low power, solar-compatible</td>
+                            </tr>
+                            <tr>
+                                <td>Safety</td>
+                                <td class="td-old">Fire risk, manual handling</td>
+                                <td class="td-new">Fully enclosed, tamper-proof</td>
+                            </tr>
+                            <tr>
+                                <td>IoT / Monitoring</td>
+                                <td class="td-old">No smart features</td>
+                                <td class="td-new">Wi-Fi, alerts, analytics</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SDG Alignment -->
+    <section id="sdg" class="section section-sdg">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Global Goals</span>
+                <h2 class="section-title">Aligned with <span class="gradient-text">UN SDGs</span></h2>
+                <p class="section-subtitle">Clean-X Pad directly contributes to multiple United Nations Sustainable
+                    Development Goals, making it a solution with global relevance.</p>
+            </div>
+
+            <div class="sdg-grid">
+                <div class="sdg-card animate-on-scroll" style="--delay: 0s">
+                    <div class="sdg-number" style="--sdg-color: #E5243B">3</div>
+                    <h3>Good Health & Well-Being</h3>
+                    <p>Eliminates health risks from improper waste handling, protecting waste workers and communities
+                        from infections and toxic exposure.</p>
+                </div>
+                <div class="sdg-card animate-on-scroll" style="--delay: 0.1s">
+                    <div class="sdg-number" style="--sdg-color: #BF8B2E">5</div>
+                    <h3>Gender Equality</h3>
+                    <p>Provides dignified, private menstrual waste disposal — breaking stigma and empowering women and
+                        girls with safe hygiene solutions.</p>
+                </div>
+                <div class="sdg-card animate-on-scroll" style="--delay: 0.2s">
+                    <div class="sdg-number" style="--sdg-color: #26BDE2">6</div>
+                    <h3>Clean Water & Sanitation</h3>
+                    <p>Prevents menstrual waste from contaminating water sources, protecting aquatic ecosystems and
+                        ensuring clean water access.</p>
+                </div>
+                <div class="sdg-card animate-on-scroll" style="--delay: 0.3s">
+                    <div class="sdg-number" style="--sdg-color: #FCC30B">7</div>
+                    <h3>Affordable & Clean Energy</h3>
+                    <p>Low-power, solar-compatible design ensures sustainable operation even in energy-constrained
+                        environments.</p>
+                </div>
+                <div class="sdg-card animate-on-scroll" style="--delay: 0.4s">
+                    <div class="sdg-number" style="--sdg-color: #FD9D24">9</div>
+                    <h3>Industry, Innovation & Infrastructure</h3>
+                    <p>A groundbreaking innovation in waste management technology — proving that smart engineering can
+                        solve pressing social challenges.</p>
+                </div>
+                <div class="sdg-card animate-on-scroll" style="--delay: 0.5s">
+                    <div class="sdg-number" style="--sdg-color: #DD1367">11</div>
+                    <h3>Sustainable Cities & Communities</h3>
+                    <p>Deployable in schools, hospitals, offices, and public spaces — making cities cleaner, safer, and
+                        more sustainable.</p>
+                </div>
+                <div class="sdg-card animate-on-scroll" style="--delay: 0.6s">
+                    <div class="sdg-number" style="--sdg-color: #BF8B2E">12</div>
+                    <h3>Responsible Consumption</h3>
+                    <p>Promotes responsible waste management practices and reduces the environmental footprint of
+                        sanitary product disposal.</p>
+                </div>
+                <div class="sdg-card animate-on-scroll" style="--delay: 0.7s">
+                    <div class="sdg-number" style="--sdg-color: #3F7E44">13</div>
+                    <h3>Climate Action</h3>
+                    <p>Zero-emission processing prevents greenhouse gas release from open burning and landfill
+                        decomposition of menstrual waste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section id="applications" class="section section-applications">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Deployment</span>
+                <h2 class="section-title">Where Clean-X Pad <span class="gradient-text">Makes an Impact</span></h2>
+                <p class="section-subtitle">Designed for versatile deployment across diverse environments — from rural
+                    communities to metropolitan institutions.</p>
+            </div>
+
+            <div class="applications-grid">
+                <div class="app-card animate-on-scroll" style="--delay: 0s">
+                    <div class="app-icon">🏫</div>
+                    <h3>Schools & Colleges</h3>
+                    <p>Promotes menstrual hygiene management in educational institutions, reducing absenteeism and
+                        ensuring student well-being.</p>
+                </div>
+                <div class="app-card animate-on-scroll" style="--delay: 0.05s">
+                    <div class="app-icon">🏥</div>
+                    <h3>Hospitals & Clinics</h3>
+                    <p>Meets strict biomedical waste protocols while providing safe, compliant disposal in healthcare
+                        settings.</p>
+                </div>
+                <div class="app-card animate-on-scroll" style="--delay: 0.1s">
+                    <div class="app-icon">🏢</div>
+                    <h3>Corporate Offices</h3>
+                    <p>Enhances workplace hygiene standards and demonstrates corporate commitment to sustainability and
+                        employee wellness.</p>
+                </div>
+                <div class="app-card animate-on-scroll" style="--delay: 0.15s">
+                    <div class="app-icon">🚉</div>
+                    <h3>Public Spaces</h3>
+                    <p>Railway stations, airports, malls, and community centers — bringing safe disposal to high-traffic
+                        public areas.</p>
+                </div>
+                <div class="app-card animate-on-scroll" style="--delay: 0.2s">
+                    <div class="app-icon">🏘️</div>
+                    <h3>Rural Communities</h3>
+                    <p>Solar-powered capability makes it ideal for deployment in underserved rural areas with limited
+                        waste infrastructure.</p>
+                </div>
+                <div class="app-card animate-on-scroll" style="--delay: 0.25s">
+                    <div class="app-icon">🏭</div>
+                    <h3>Industrial Facilities</h3>
+                    <p>Factories and manufacturing plants can ensure safe waste management for their workforce as part
+                        of occupational health programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Scope -->
+    <section id="future" class="section section-future">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Vision</span>
+                <h2 class="section-title">Future <span class="gradient-text">Roadmap</span></h2>
+                <p class="section-subtitle">Clean-X Pad is just the beginning. Our roadmap envisions a comprehensive
+                    ecosystem for sustainable hygiene waste management.</p>
+            </div>
+
+            <div class="roadmap">
+                <div class="roadmap-item animate-on-scroll" style="--delay: 0s">
+                    <div class="roadmap-phase">Phase 1</div>
+                    <div class="roadmap-content">
+                        <h3>Prototype & Testing</h3>
+                        <p>Complete functional prototype development, lab testing, and pilot deployment in select
+                            institutions for real-world validation.</p>
+                        <span class="roadmap-status active">In Progress</span>
+                    </div>
+                </div>
+                <div class="roadmap-item animate-on-scroll" style="--delay: 0.1s">
+                    <div class="roadmap-phase">Phase 2</div>
+                    <div class="roadmap-content">
+                        <h3>AI-Powered Analytics</h3>
+                        <p>Integrate machine learning for predictive maintenance, usage pattern analysis, and smart
+                            waste collection route optimization.</p>
+                        <span class="roadmap-status">Upcoming</span>
+                    </div>
+                </div>
+                <div class="roadmap-item animate-on-scroll" style="--delay: 0.2s">
+                    <div class="roadmap-phase">Phase 3</div>
+                    <div class="roadmap-content">
+                        <h3>Mobile App & Dashboard</h3>
+                        <p>Develop a companion app for real-time monitoring, maintenance scheduling, usage statistics,
+                            and multi-unit fleet management.</p>
+                        <span class="roadmap-status">Planned</span>
+                    </div>
+                </div>
+                <div class="roadmap-item animate-on-scroll" style="--delay: 0.3s">
+                    <div class="roadmap-phase">Phase 4</div>
+                    <div class="roadmap-content">
+                        <h3>Scale & Commercialization</h3>
+                        <p>Mass manufacturing, government partnerships, CSR program integration, and international
+                            expansion to address global menstrual waste challenges.</p>
+                        <span class="roadmap-status">Future</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="section section-team">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">The Innovators</span>
+                <h2 class="section-title">Meet Our <span class="gradient-text">Team</span></h2>
+                <p class="section-subtitle">A passionate team of young innovators driven by technology, sustainability,
+                    and the vision to create real-world impact.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card animate-on-scroll" style="--delay: 0s">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="16" r="8" stroke="currentColor" stroke-width="2" fill="none" />
+                                <path d="M6 36c0-8 6-14 14-14s14 6 14 14" stroke="currentColor" stroke-width="2"
+                                    fill="none" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Rudhrakash Gupta</h3>
+                    <p class="team-role">Project Vision & Strategy and CEO</p>
+                    <p class="team-desc">Leading the Clean-X Pad initiative from concept to prototype, coordinating
+                        research, design, and development.</p>
+                </div>
+                <div class="team-card animate-on-scroll" style="--delay: 0.1s">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="16" r="8" stroke="currentColor" stroke-width="2" fill="none" />
+                                <path d="M6 36c0-8 6-14 14-14s14 6 14 14" stroke="currentColor" stroke-width="2"
+                                    fill="none" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Hardware Engineer not decided yet</h3>
+                    <p class="team-role">Electronics & Embedded Systems</p>
+                    <p class="team-desc">Designing the electronic control systems, sensor integration, and
+                        microcontroller programming for automated operation.</p>
+                </div>
+                <div class="team-card animate-on-scroll" style="--delay: 0.2s">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="16" r="8" stroke="currentColor" stroke-width="2" fill="none" />
+                                <path d="M6 36c0-8 6-14 14-14s14 6 14 14" stroke="currentColor" stroke-width="2"
+                                    fill="none" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Mechanical Designer not decided yet </h3>
+                    <p class="team-role">Mechanical Engineering & CAD</p>
+                    <p class="team-desc">Creating the mechanical design, shredding mechanism, and enclosure engineering
+                        for optimal performance and durability.</p>
+                </div>
+                <div class="team-card animate-on-scroll" style="--delay: 0.3s">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="16" r="8" stroke="currentColor" stroke-width="2" fill="none" />
+                                <path d="M6 36c0-8 6-14 14-14s14 6 14 14" stroke="currentColor" stroke-width="2"
+                                    fill="none" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Research Analyst not decided yet </h3>
+                    <p class="team-role">Environmental Science & Impact</p>
+                    <p class="team-desc">Conducting environmental impact assessment, waste analysis, and ensuring
+                        alignment with sustainability standards and SDGs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faq" class="section section-faq">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Questions</span>
+                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item animate-on-scroll" style="--delay: 0s">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What is Clean-X Pad?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Clean-X Pad is a smart, automated sanitary waste management device that safely disposes of
+                            used sanitary pads through a six-stage process: Smart Intake, UV Sterilization, Controlled
+                            Heating, Shredding, Activated Carbon Filtration, and Safe Waste Collection. It's designed to
+                            be a sustainable, zero-emission alternative to open burning and landfill disposal.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="--delay: 0.05s">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How is it different from a traditional incinerator?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Unlike traditional incinerators that release toxic dioxins and furans into the atmosphere,
+                            Clean-X Pad uses controlled heating (not incineration) combined with activated carbon
+                            filtration to ensure zero emissions. It also adds UV sterilization for pathogen elimination
+                            and is fully automated — requiring no manual operation.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="--delay: 0.1s">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Is it safe for use in schools and public places?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Clean-X Pad is designed with multiple safety features including a fully enclosed,
+                            tamper-proof body, auto-shutoff mechanisms, temperature monitoring, and safe sealed waste
+                            collection. It produces no flames, no smoke, and no harmful emissions — making it safe for
+                            schools, hospitals, offices, and any public space.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="--delay: 0.15s">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How much power does it consume?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Clean-X Pad is engineered for energy efficiency, consuming minimal electricity per processing
+                            cycle. Its low power requirement makes it compatible with solar panel setups, enabling
+                            deployment in off-grid and rural areas where conventional power supply may be unreliable.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="--delay: 0.2s">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What happens to the processed waste?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>After processing, the waste is reduced by up to 80% in volume and is completely sterilized.
+                            The resulting dry, inert material is collected in a sealed container and can be safely
+                            disposed of with standard municipal waste — posing no biohazard or environmental risk.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="--delay: 0.25s">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Is this developed for the Samsung Solve for Tomorrow competition?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Clean-X Pad was developed as our submission for the Samsung Solve for Tomorrow
+                            competition under the theme of Environmental Sustainability. The competition challenges
+                            young innovators to create technology-driven solutions for real-world problems, and Clean-X
+                            Pad addresses the critical issue of menstrual waste management in India.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info animate-on-scroll">
+                    <span class="section-tag">Reach Out</span>
+                    <h2 class="section-title">Let's Build a <span class="gradient-text">Cleaner Future</span></h2>
+                    <p>Interested in Clean-X Pad? Whether you're a judge, investor, institution, or fellow innovator —
+                        we'd love to hear from you.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                    stroke="currentColor" stroke-width="2" fill="none" />
+                                <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>rudhr0011@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z" stroke="currentColor"
+                                    stroke-width="2" fill="none" />
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" fill="none" />
+                            </svg>
+                            <span>India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrap animate-on-scroll">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="investment">Investment</option>
+                                <option value="deployment">Deployment Request</option>
+                                <option value="media">Media / Press</option>
+                                <option value="general">General Question</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"
+                                placeholder="Tell us about your interest in Clean-X Pad..." rows="4"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10h12m-4-4 4 4-4 4" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="section section-cta">
+        <div class="cta-bg">
+            <div class="cta-gradient"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2>Ready to Support a <span class="gradient-text-light">Sustainable Revolution?</span></h2>
+                <p>Join us in transforming menstrual waste management. Together, we can build a cleaner, healthier, and
+                    more equitable future for millions.</p>
+                <div class="cta-actions">
+                    <a href="#contact" class="btn btn-white">
+                        <span>Partner With Us</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12m-4-4 4 4-4 4" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#solution" class="btn btn-outline-white">
+                        <span>Learn More</span>
+                    </a>
+                </div>
+                <div class="cta-badge">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span> Join clean x pad mission </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-icon">
+                            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                                <circle cx="16" cy="16" r="14" stroke="url(#footLogoGrad)" stroke-width="2.5" />
+                                <path d="M10 16 L14 20 L22 12" stroke="url(#footLogoGrad)" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="footLogoGrad" x1="0" y1="0" x2="32" y2="32">
+                                        <stop offset="0%" stop-color="#00C853" />
+                                        <stop offset="100%" stop-color="#0288D1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="logo-text">Clean-X <span class="logo-highlight">Pad</span></span>
+                    </a>
+                    <p>Smart sanitary waste management for a sustainable future.</p>
+
+                </div>
+                <div class="footer-links">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="#problem">Problem</a></li>
+                        <li><a href="#solution">Solution</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="#sdg">SDG Alignment</a></li>
+                        <li><a href="#applications">Applications</a></li>
+                        <li><a href="#future">Future Scope</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Clean-X Pad. Built with ♻️ for a sustainable future.</p>
+                <p class="footer-competition">Science Exhibition — Health and Hygiene </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
